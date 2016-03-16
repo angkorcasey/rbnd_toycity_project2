@@ -1,3 +1,5 @@
+require 'json'
+
 # Get path to products.json, read the file into a string,
 # and transform the string into a usable hash
 def setup_files
@@ -7,9 +9,10 @@ def setup_files
     $report_file = File.new("report.txt", "w+")
 end
 
-setup_files
-
-$report_file
+def start
+  setup_files # load, read, parse, and create the files
+  create_report # create the report!
+end
 
 # Print "Sales Report" in ascii art
 
