@@ -14,6 +14,7 @@ def start
   create_report # create the report!
 end
 # Print "Sales Report" in ascii art
+# ascii art font is CalvinS from <patorjk.com>
 def print_sales_report_ASCII
   $report_file.puts "
 
@@ -27,13 +28,16 @@ def print_sales_report_ASCII
 end
 def create_report
   print_sales_report_ASCII
+  print_date
+end
+
+# Print today's date
+def print_date
+  date = Time.now.strftime("%m/%d/%Y")
+  $report_file.puts "  Date: #{date}"
 end
 
 start
-
-
-
-# Print today's date
 
 # Print "Products" in ascii art
 
