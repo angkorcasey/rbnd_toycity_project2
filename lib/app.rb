@@ -18,17 +18,16 @@ end
 def print_sales_report_ASCII
   $report_file.puts "
 
-
   ╔═╗┌─┐┬  ┌─┐┌─┐  ╦═╗┌─┐┌─┐┌─┐┬─┐┌┬┐
   ╚═╗├─┤│  ├┤ └─┐  ╠╦╝├┤ ├─┘│ │├┬┘ │
   ╚═╝┴ ┴┴─┘└─┘└─┘  ╩╚═└─┘┴  └─┘┴└─ ┴
-
-
 "
 end
 def create_report
   print_sales_report_ASCII
   print_date
+  print_products_ASCII
+  print_brands_ASCII
 end
 
 # Print today's date
@@ -37,9 +36,16 @@ def print_date
   $report_file.puts "  Date: #{date}"
 end
 
-start
-
 # Print "Products" in ascii art
+def print_products_ASCII
+  $report_file.puts "
+
+  ╔═╗┬─┐┌─┐┌┬┐┬ ┬┌─┐┌┬┐┌─┐
+  ╠═╝├┬┘│ │ │││ ││   │ └─┐
+  ╩  ┴└─└─┘─┴┘└─┘└─┘ ┴ └─┘
+"
+end
+
 
 # For each product in the data set:
 	# Print the name of the toy
@@ -50,6 +56,16 @@ start
 	# Calculate and print the average discount (% or $) based off the average sales price
 
 # Print "Brands" in ascii art
+def print_brands_ASCII
+  $report_file.puts "
+
+  ╔╗ ┬─┐┌─┐┌┐┌┌┬┐┌─┐
+  ╠╩╗├┬┘├─┤│││ ││└─┐
+  ╚═╝┴└─┴ ┴┘└┘─┴┘└─┘
+"
+end
+
+start
 
 # For each brand in the data set:
 	# Print the name of the brand
