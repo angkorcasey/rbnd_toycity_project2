@@ -13,8 +13,25 @@ def start
   setup_files # load, read, parse, and create the files
   create_report # create the report!
 end
-
 # Print "Sales Report" in ascii art
+def print_sales_report_ASCII
+  $report_file.puts "
+
+
+  ╔═╗┌─┐┬  ┌─┐┌─┐  ╦═╗┌─┐┌─┐┌─┐┬─┐┌┬┐
+  ╚═╗├─┤│  ├┤ └─┐  ╠╦╝├┤ ├─┘│ │├┬┘ │
+  ╚═╝┴ ┴┴─┘└─┘└─┘  ╩╚═└─┘┴  └─┘┴└─ ┴
+
+
+"
+end
+def create_report
+  print_sales_report_ASCII
+end
+
+start
+
+
 
 # Print today's date
 
