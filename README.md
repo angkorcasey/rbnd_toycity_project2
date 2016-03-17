@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ToyCity Report Generator, Part 2
 
 ## Project Overview
@@ -30,3 +31,7 @@ Before submitting your project for evaluation, we recommend that you check that 
 * You completed your project according to the instructions
 * You checked your project against the [rubric](https://docs.google.com/document/d/1TgOs3jLJp8TUP6ZIrujV4FkHFOvnek1T_OUz0-yW6jA/pub)
 * Create a zip file with your  For instructions on how to do this, click [here](https://docs.google.com/document/d/1jPCDXBuD4xV8PsGLa5K9Fpn_9lSCTrXeOWcUKQGnATU/pub?embedded=true). When you feel ready to submit, use the blue 'Submit Project' button below!
+=======
+# rbnd_toycity_project2
+Refactoring sales report generator as part of the Udacity Ruby Nanodegree cirriculum.
+>>>>>>> f1d17b5bfec4b59aed8ce0acd215670ed10a7f9b

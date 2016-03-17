@@ -50,9 +50,6 @@ def print_date
   $report_file.puts "  Date: #{date}"
 end
 
-
-
-
 # For each product in the data set:
 	# Print the name of the toy
   # Print the retail price of the toy
